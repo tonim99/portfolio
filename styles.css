@@ -1,0 +1,77 @@
+/* color scheme
+Light brown - #A18276
+Purple-navy - #4F517D
+Black - #000000
+Cultured - #F5F3F5
+Opal - #BAD1CD */
+/* * {
+    border: 1px solid black !important;
+} */
+.beaver {
+    color: #A18276;
+}
+.purple-navy {
+    color: #4F517D
+}
+.cultured {
+    color: #F5F3F5
+}
+.opal {
+    color: #BAD1CD;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    border-bottom: 1px solid black;
+}
+h1 {
+    font-size: 2em;
+    margin: 0px;
+    text-align: center;
+    color: #4f517d;
+}
+nav {
+}
+div#burgernav {
+    padding-left: 150px;
+    padding-right: 5px;
+}
+div#fullnav {
+    display: none;
+    /* background-color: lightgray; */
+}
+a.purple-navy {
+    text-decoration: none;
+    font-size: 16px;
+}
+body {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr) */
+    background-color: #f5f3f5;
+}
+article {
+    display: grid;
+}
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    font-size: 1.20em;
+}
+form.input {
+    width: 100%;
+}
+footer {
+    display: flex;
+}
+button#top-button {
+    background-color: #4f517d;
+    color: white;
+    margin-left: 260px;
+    margin-top: 25px;
+    padding: 15px;
+}
