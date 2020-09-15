@@ -96,8 +96,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 20hrs| hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and their role in the project. 
-
+Bootstrap - nav bar and form
+jQuery - 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
