@@ -27,6 +27,12 @@ body {
     background-color: #f5f3f5;
 }
 
+article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
 h2 {
     text-align: center;
     background-color: #bad1cd;
@@ -37,8 +43,10 @@ h2 {
     background-color: #f5f3f5;
 }
 
-h5{
+h5 {
     text-align: center;
+    background-color: #bad1cd;
+    color: white;
 }
 
 div.projects {
@@ -46,6 +54,10 @@ div.projects {
     color: white;
 }
 
+img {
+    height: 300px;
+    width: 300px;
+}
 form {
     margin: 10px 100px 10px 100px;
 }
@@ -61,7 +73,7 @@ button {
     border-radius: 10%;
 }
 
-#top-button {
+.top-button {
     padding: 5px;
     border-radius: 10%;
     margin: 0px;
@@ -84,7 +96,7 @@ footer {
     ". . button"
 }
 
-nav#top-button {
+.top-button {
     grid-area: button;
     justify-self: end;
 }

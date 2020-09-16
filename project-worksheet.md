@@ -97,7 +97,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Additional Libraries
 Bootstrap - nav bar and form
-jQuery - 
+jQuery 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
@@ -109,8 +109,6 @@ function reverse(string) {
 ```
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
-
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+ 1. Had a problem getting the top button to hear the click.                                
+**RESOLUTION**
+1. script tag was not placed after the button in question. Button was in footer outside of body, and script tag was at the bottom of the body. 

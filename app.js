@@ -22,6 +22,12 @@ $.ajax({url:sheetAsJson})
         })
         render(projects)
     })
+console.log($);
 
-    // const $div = $('<div>').addClass('projects').text('projects')
-    // $('#projects-div').append($div)
+$('.submit-button').on('click', () => {
+    console.log('form submit clicked');
+});
+//used stackoverflow for help with scroll function
+$('.top-button').on('click', () => {
+    $(window).scrollTop(0);
+});
