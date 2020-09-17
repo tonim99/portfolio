@@ -49,9 +49,14 @@ h5 {
     color: white;
 }
 
-div.projects {
-    background-color: #4f517d;
+div#projects-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 1fr);
+    
+    /* background-color: #4f517d; */
     color: white;
+
 }
 
 img {

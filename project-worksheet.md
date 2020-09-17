@@ -97,6 +97,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Additional Libraries
 Bootstrap - nav bar and form
+
 jQuery 
 ## Code Snippet
 
@@ -109,6 +110,6 @@ function reverse(string) {
 ```
 
 ## Issues and Resolutions
- 1. Had a problem getting the top button to hear the click.                                
+ Had a problem getting the top button to hear the click.                                
 **RESOLUTION**
-1. script tag was not placed after the button in question. Button was in footer outside of body, and script tag was at the bottom of the body. 
+Script tag was not placed after the button in question. Button was in footer outside of body, and script tag was at the bottom of the body. Moved footer inside body tags above the script tag. 
