@@ -8,9 +8,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 1| Project Description | Complete
+|Day 1| Wireframes / Priority Matrix / Timeline | Complete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
@@ -96,20 +96,26 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 20hrs| hrs |
 
 ## Additional Libraries
-Bootstrap - nav bar and form
+Bootstrap - nav bar
 
 jQuery 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+    $.ajax({url: sheetAsJson})
+    .then(data => {
+        const projects = data.feed.entry.forEach(project => {
+            const $renderedProj = $('<h3>').text(project.gsx$title.$t);
+            const $renderedImg = $('<img>').attr('src', project.gsx$image.$t);
+            const $renderedDescription = $('<p>').text(project.gsx$description.$t)
+            $('#projects-div').append($renderedProj);
+            $('#projects-div').append($renderedImg);
+            $('#projects-div').append($renderedDescription);
+        })
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
 
 ## Issues and Resolutions
- Had a problem getting the top button to hear the click.                                
+ Had a problem getting the top button to hear the click.     
+
+
 **RESOLUTION**
-Script tag was not placed after the button in question. Button was in footer outside of body, and script tag was at the bottom of the body. Moved footer inside body tags above the script tag. 
+Button was in footer outside of body, and script tag was at the bottom of the body. Moved footer inside body tags above the script tag. 

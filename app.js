@@ -1,29 +1,18 @@
 let sheetAsJson =
     'https://spreadsheets.google.com/feeds/list/1uwFmEbEq4zu9XBAsp9m57i4uShA2Ug9H9tCpOr8I43U/od6/public/values?alt=json';
     
-const render = (projectArr) => {
-    const $div = $('<div>').addClass('projects').text(projectArr[0].title);
-    $('#projects-div').append($div);
-    const $img = $('<img>').attr('src', projectArr[0].image)
-    $('#projects-div').append($img)    
-    console.log(projectArr[0].title)
-    console.log("this is projectArr", projectArr)
-}
-
-$.ajax({url:sheetAsJson})
+$.ajax({url: sheetAsJson})
     .then(data => {
-        const projects = data.feed.entry.map(project => {
-            console.log(project)
-            return{
-                title: project.gsx$title.$t, 
-                image: project.gsx$image.$t, 
-                description: project.gsx$description.$t
-            }
+        const projects = data.feed.entry.forEach(project => {
+            const $renderedProj = $('<h3>').text(project.gsx$title.$t);
+            const $renderedImg = $('<img>').attr('src', project.gsx$image.$t);
+            const $renderedDescription = $('<p>').text(project.gsx$description.$t)
+            $('#projects-div').append($renderedProj);
+            $('#projects-div').append($renderedImg);
+            $('#projects-div').append($renderedDescription);
         })
-        render(projects)
-    })
-console.log($);
 
+})
 $('.submit-button').on('click', () => {
     console.log('form submit clicked');
 });

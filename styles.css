@@ -7,91 +7,88 @@ Opal - #BAD1CD */
 /* * {
     border: 1px solid black;
 } */
-.navbar {
-    background-color: #4f517d;
-}
-.navbar-brand {
-    color: #f5f3f5;
-    font-size: 2em;
-}
-a.nav-link {
-    color: #f5f3f5;
-}
-/* found on codecorns.com */
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
 body {
-    display: grid;
+    width: 100%;
+    min-width: 400px;
     background-color: #f5f3f5;
 }
+.navbar {
+    background-color: #454480;
+    padding: 25px;
+    margin: 10px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 2em;
+}
+
+a.nav-link {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+} 
 
 article {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    border-top: 10px, solid, white;
+    width: 100%;
+    height: 350px;
 }
 
 h2 {
     text-align: center;
-    background-color: #bad1cd;
-    color: white;
+    margin: 20px;
 }
 
-#about-me {
-    background-color: #f5f3f5;
-}
-
-h5 {
-    text-align: center;
-    background-color: #bad1cd;
-    color: white;
-}
-
-div#projects-div {
+ div#projects-div {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3 1fr);
-    
-    /* background-color: #4f517d; */
+}  
+
+div.container {
+    background-color: #454480;
+    border: 10px, solid, white;
     color: white;
-
+    margin-top: 10px;
+    width: 100%;
 }
 
-img {
-    height: 300px;
-    width: 300px;
-}
 form {
-    margin: 10px 100px 10px 100px;
+    display: flex;
+    flex-direction: column;
 }
 
-button {
-    background-color: #4f517d;
-    color: white;
-    margin: 10px;
+input {
+    width: 50%;
+    min-width: 200px;
+    max-width: 300px;
+    position: relative;
+    margin: auto;
 }
+
+input#message-box {
+    height: 200px;
+    width: 50%;
+    min-width: 200px;
+    margin: auto;
+} 
 
 .submit-button {
+    margin: auto;
     padding: 10px;
     border-radius: 10%;
-}
-
-.top-button {
-    padding: 5px;
-    border-radius: 10%;
-    margin: 0px;
-}
-
-input#formGroupExampleInput2.form-control {
-    height: 200px;
-    width: 100%;
-    max-width: 768px;
-}
-
-input#formGroupExampleInput.form-control {
-    width: 300px;
+    background-color: white;
 }
 
 footer {
@@ -102,6 +99,10 @@ footer {
 }
 
 .top-button {
+    padding: 5px;
+    border-radius: 10%;
+    margin: 5px;
     grid-area: button;
     justify-self: end;
+    background-color: white;
 }
