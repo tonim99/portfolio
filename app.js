@@ -5,17 +5,15 @@ $.ajax({url: sheetAsJson})
     .then(data => {
         const projects = data.feed.entry.forEach(project => {
             const $renderedProj = $('<h3>')
-				.text(project.gsx$title.$t)
-					.addClass('title');
+							.text(project.gsx$title.$t)
+							.addClass('title');
             const $renderedImg = $('<img>')
 				.attr('src', project.gsx$image.$t)
 					.addClass('project');
             const $renderedDescription = $('<p>')
 				.text(project.gsx$description.$t)
 					.addClass('description');
-            $('#projects-div').append($renderedProj);
-            $('#projects-div').append($renderedImg);
-            $('#projects-div').append($renderedDescription);
+         $('#projects-div').append($renderedProj, $renderedImg, $renderedDescription);
         })
 })
 

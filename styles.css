@@ -48,6 +48,8 @@ article.container {
 }
 
 img.top-photo {
+    position: relative;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -55,7 +57,6 @@ img.top-photo {
     padding-top: 10px;
     padding-bottom: 20px;
     border-top: 1px solid #282025;
-    border-bottom: 1px solid #282025;
 }
 
 div.about-me {
@@ -64,23 +65,35 @@ div.about-me {
     margin-top 0px;
 }
 
+.statement {
+    padding-top: 40px;
+}
+
 h2 {
     color: #282025;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #282025;
+    border-top: 1px solid #282025;
+    padding-top: 20px;
+    padding-bottom: 10px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+}
+
+h2#me {
+    border-bottom: 1px solid #282025;
+    border-top: none;
+    padding-bottom: 10px;
 }
 
 div#projects-div {
     display: grid;
     grid-template-rows: 1fr, 1fr, 3fr, 1fr, 1fr, 3fr, 1fr, 1fr, 3fr, 1fr;
     margin-top: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 }  
 
 h3 {
     margin-top: 0px;
+    margin-bottom: 20px;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -92,7 +105,8 @@ h3 {
 #projects-div img {
     width: 60%;
     min-width: 350px;
-    /* margin: auto; */
+    position: relative;
+    margin: 0 auto;
 }
 
 #projects-div p {
@@ -101,6 +115,7 @@ h3 {
     font-weight: 200;
     font-style: italic;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 div.contact {
@@ -121,6 +136,7 @@ input {
     max-width: 300px;
     position: relative;
     margin: auto;
+    outline: none;
 }
 
 input#message-box {
@@ -133,11 +149,14 @@ input#message-box {
 .submit-button {
     margin: auto;
     padding: 10px;
-    border: none;
-    background-color: white;
+    border-radius: 10%;
+    background-color: #454480;
+    color: white;
 }
 
 footer {
+    background-color:  #454480;
+    margin-top: 20px;
     display: grid;
     width: 100%;
     grid-template-areas:
@@ -151,6 +170,7 @@ footer {
     grid-area: button;
     justify-self: end;
     background-color: white;
+    color: #282025;
 }
 
 /* tablet view */
@@ -228,6 +248,7 @@ footer {
 
     p.statement {
        margin-left: 50px;
+       padding: 0px;
     }
 
     div#projects-div {
