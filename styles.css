@@ -1,15 +1,3 @@
-/* color scheme
-Light brown - #A18276
-Purple-navy - #4F517D
-Black - #000000
-Cultured - #F5F3F5
-Opal - #BAD1CD */
-
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Source Sans Pro', sans-serif; */
-/* * {
-    border: 1px solid black;
-} */
 
 body {
     width: 100%;
@@ -19,8 +7,6 @@ body {
 
 .navbar {
     background-color: #454480;
-    /* padding: 25px;
-    margin: 10px; */
 }
 
 .navbar-brand {
@@ -169,8 +155,10 @@ footer {
     margin: 5px;
     grid-area: button;
     justify-self: end;
-    background-color: white;
+    background-color: transparent;
     color: #282025;
+    border: none;
+    color: white;
 }
 
 /* tablet view */
