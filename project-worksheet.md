@@ -75,14 +75,14 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Basic HTML/CSS | H | 2hr | hr |
-| Nav bar w/Hamburger | H | 2hr | hr |
-| Flex/Grid | H | 2hr | hr |  
-| Adding Form | H | 2hr|  hr | 
-| Buttons| M | 2hr | hr|
-| Working with API | H | 3hrs|  hr | 
-| Responsive | H | 3hr | hr | hr |
-| Total | H | 16 hrs| hrs |
+| Basic HTML/CSS | H | 2 hr | 10 hr |
+| Nav bar w/Hamburger | H | 2 hr | 2 hr |
+| Flex/Grid | H | 2 hr | 4 hr |  
+| Adding Form | H | 2 hr| 5 hr | 
+| Buttons| M | 2 hr | 3 hr|
+| Working with API | H | 3 hrs|  7 hr | 
+| Responsive | H | 3 hr | 10 hr |
+| Total | H | 16 hrs| 41 hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
@@ -104,13 +104,19 @@ jQuery
     $.ajax({url: sheetAsJson})
     .then(data => {
         const projects = data.feed.entry.forEach(project => {
-            const $renderedProj = $('<h3>').text(project.gsx$title.$t);
-            const $renderedImg = $('<img>').attr('src', project.gsx$image.$t);
-            const $renderedDescription = $('<p>').text(project.gsx$description.$t)
-            $('#projects-div').append($renderedProj);
-            $('#projects-div').append($renderedImg);
-            $('#projects-div').append($renderedDescription);
+            const $renderedProj = $('<h3>')
+							.text(project.gsx$title.$t)
+							.addClass('title');
+            const $renderedImg = $('<img>')
+				.attr('src', project.gsx$image.$t)
+					.addClass('project');
+            const $renderedDescription = $('<p>')
+				.text(project.gsx$description.$t)
+					.addClass('description');
+         $('#projects-div').append($renderedProj, $renderedImg, $renderedDescription);
         })
+})
+
 
 
 ## Issues and Resolutions
