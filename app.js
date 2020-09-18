@@ -4,18 +4,25 @@ let sheetAsJson =
 $.ajax({url: sheetAsJson})
     .then(data => {
         const projects = data.feed.entry.forEach(project => {
-            const $renderedProj = $('<h3>').text(project.gsx$title.$t);
-            const $renderedImg = $('<img>').attr('src', project.gsx$image.$t);
-            const $renderedDescription = $('<p>').text(project.gsx$description.$t)
+            const $renderedProj = $('<h3>')
+				.text(project.gsx$title.$t)
+					.addClass('title');
+            const $renderedImg = $('<img>')
+				.attr('src', project.gsx$image.$t)
+					.addClass('project');
+            const $renderedDescription = $('<p>')
+				.text(project.gsx$description.$t)
+					.addClass('description');
             $('#projects-div').append($renderedProj);
             $('#projects-div').append($renderedImg);
             $('#projects-div').append($renderedDescription);
         })
-
 })
+
 $('.submit-button').on('click', () => {
     console.log('form submit clicked');
 });
+
 //used stackoverflow for help with scroll function
 $('.top-button').on('click', () => {
     $(window).scrollTop(0);

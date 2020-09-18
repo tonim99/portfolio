@@ -114,8 +114,12 @@ jQuery
 
 
 ## Issues and Resolutions
+
+**ISSUE**
+
  Had a problem getting the top button to hear the click.     
 
 
 **RESOLUTION**
+
 Button was in footer outside of body, and script tag was at the bottom of the body. Moved footer inside body tags above the script tag. 
