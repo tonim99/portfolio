@@ -12,8 +12,11 @@ $.ajax({url: sheetAsJson})
 					.addClass('project');
             const $renderedDescription = $('<p>')
 				.text(project.gsx$description.$t)
-					.addClass('description');
-         $('#projects-div').append($renderedProj, $renderedImg, $renderedDescription);
+                    .addClass('description');
+            const $renderedLink = $('<a>')
+                .attr('href', project.gsx$link.$t)
+                    .addClass('link');
+         $('#projects-div').append($renderedProj, $renderedImg, $renderedDescription, $renderedLink);
         })
 })
 
