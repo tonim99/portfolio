@@ -18,6 +18,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
     <title>Portfolio | Tonimarie Morris</title>
 </head>
 <body>
@@ -49,8 +50,8 @@
                 alt="coding-pic">
             <div class='about-me' id= 'abt-me'>
                 <h2 id= 'me'>About Me</h2>
-                <p class = "statement">I am a Full Stack Developer living in the beautiful Shenandoah Valley in central Virginia with my
-                two Akitas. I am passionate about making clean and functional web applications. Clean lines and simplicity are the hallmarks of my work. If you like what you see, please feel free to reach out!</p>
+                <p class = "statement">I am a Full Stack Software Engineer living in the beautiful Shenandoah Valley in central Virginia with my
+                two Akitas. I am passionate about making clean and functional web applications. If you like what you see, please feel free to reach out!</p>
             </div>
         </div>
         <div class = 'container' id = "projects-div">
@@ -58,10 +59,10 @@
         </div>
         <div class = 'contact'>   
             <h2 id = 'contact-me'>Contact</h2>
-            <form>
-                <input class = "input-box" type="text" placeholder = "Name">
-                <input class = "input-box" type="text" placeholder = "Email">
-                <input type="text" id="message-box" placeholder = "Message"><br>
+            <form action='https://formspree.io/f/xleowydg' method="POST">
+                <input class = "input-box" type="text" placeholder = "Name" name = "name" required>
+                <input class = "input-box" type="text" placeholder = "Email" name = "email" required>
+                <input type="text" id="message-box" placeholder = "Message" name= "message" required><br>
                 <button type = "submit" class = "submit-button">Submit</button>
             </form>
         </div>
