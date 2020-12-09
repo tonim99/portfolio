@@ -125,10 +125,11 @@ input {
     outline: none;
 }
 
-input#message-box {
+textarea {
     height: 200px;
     width: 100%;
     min-width: 200px;
+    max-width: 300px;
     margin: auto;
 } 
 

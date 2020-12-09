@@ -25,9 +25,8 @@ $.ajax({ url: sheetAsJson }).then((data) => {
 });
 
 $('.submit-button').on('click', () => {
-    console.log('form submit clicked')
+	console.log('form submit clicked')
 });
-
 //used stackoverflow for help with scroll function
 $('.top-button').on('click', () => {
 	$(window).scrollTop(0);
