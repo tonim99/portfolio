@@ -46,9 +46,9 @@ img.top-photo {
 }
 
 div.about-me {
-    background-color white;
+    background-color: white;
     color: #282025;
-    margin-top 0px;
+    margin-top: 0px;
 }
 
 .statement {
@@ -125,7 +125,7 @@ input {
     outline: none;
 }
 
-textarea {
+textarea#message-box {
     height: 200px;
     width: 100%;
     min-width: 200px;
