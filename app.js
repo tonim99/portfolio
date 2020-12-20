@@ -25,10 +25,10 @@ https: $.ajax({ url: sheetAsJson }).then((data) => {
 	});
 });
 
-$('.submit-button').on('click', () => {
-	console.log('form submit clicked');
-});
+// $('.submit-button').on('click', () => {
+// 	console.log('form submit clicked');
+// });
 
-$('.top-button').on('click', () => {
+$('.fa-arrow-up').on('click', () => {
 	$(window).scrollTop(0);
 });
