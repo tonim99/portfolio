@@ -3,7 +3,6 @@ let sheetAsJson =
 
 https: $.ajax({ url: sheetAsJson }).then((data) => {
 	const projects = data.feed.entry.forEach((project) => {
-		console.log(project);
 		const $renderedProj = $('<h3>')
 			.text(project.gsx$title.$t)
 			.addClass('title');
@@ -24,11 +23,10 @@ https: $.ajax({ url: sheetAsJson }).then((data) => {
 		);
 	});
 });
-
-// $('.submit-button').on('click', () => {
-// 	console.log('form submit clicked');
-// });
-
+function formReset() {
+	setTimeout(function(){document.getElementById('form').reset()}, 100)
+}
+$('.submit-button').click(formReset())
 $('.fa-arrow-up').on('click', () => {
 	$(window).scrollTop(0);
 });
