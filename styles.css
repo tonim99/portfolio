@@ -166,14 +166,14 @@ footer {
 	padding: 5px 10px;
 	color: white;
 	font-weight: 400;
-	font-size: 28px;
+	font-size: 18px;
 	padding-top: 15px;
 }
 .fa-linkedin,
 .fa-twitter,
 .fa-github {
 	color: white;
-	font-size: 32px;
+	font-size: 22px;
 	padding-bottom: 10px;
 	margin: 15px;
 	cursor: pointer;
@@ -245,6 +245,14 @@ footer {
 
 	p.description:nth-of-type(4) {
 		grid-area: 7 / 2 / 8 / 4;
+	}
+	.media-links {
+		font-size: 32px;
+	}
+	.fa-linkedin,
+	.fa-twitter,
+	.fa-github {
+		font-size: 32px;
 	}
 }
 
